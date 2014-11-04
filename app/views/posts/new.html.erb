@@ -1,2 +1,23 @@
-<h1>Posts#new</h1>
-<p>Find me in app/views/posts/new.html.erb</p>
+ <h1>Select your Desk</h1>
+ 
+ <div class="row">
+   <div class="col-md-4">
+     <p>Furniture Options--click through to view sample image. </p>
+     <ul>
+       <li><a href="http://img1.wfrcdn.com/lf/49/hash/716/12582818/1/Eames+%C2%AE+Desk+Unit.jpg">Basic Desk</a></li>
+       <li><a href="http://paikad.com/wp-content/uploads/2014/07/focal-locus-desk-chair-large.jpg">Standing Desk</a></li>
+       <li><a href="http://media-cache-ec0.pinimg.com/736x/ef/91/be/ef91be2bc07c5e1c2f7e39ca385c80b6.jpg">Mega Desk</a></li>
+     </ul>
+   </div>
+   <div class="col-md-8">
+     <%= form_for @post do |f| %>
+       <div class="form-group">
+         <%= f.label :selection %>
+         <%= f.text_field :selection, class: 'form-control', placeholder: "Enter your choice of desk here." %>
+       </div>
+       <div class="form-group">
+         <%= f.submit "Save", class: 'btn btn-success' %>
+       </div>
+     <% end %>
+   </div>
+ </div>

@@ -1,2 +1,26 @@
 
-<h1> This is the Page to put the selection view "decision" </h1>
+<br/>
+<div class="jumbotron">
+  <h1>Building Blocks Furniture Site</h1>
+  <p>We've decided to acquire new desks for the team. Please register, sign-in, and save your choice. Choices may be edited until 11/15/2014. The most recent choice will be locked-in on that date. </p>
+  <p>
+      <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or 
+      <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h2>Basic Desk</h2>
+    <p>Simple, practical, and customizable.</p>
+    
+  </div>
+  <div class="col-md-4">
+    <h2>Standing Desk</h2>
+    <p>Great for creating a strong-core and avoiding long-term back pain.</p>
+  </div>
+  <div class="col-md-4">
+    <h2>Mega Desk</h2>
+    <p>The name says it all. Big, heavy, classic looking. Lot's of storage and room for dual monitor set-ups.</p>
+  </div>
+</div>

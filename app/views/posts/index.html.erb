@@ -1,10 +1,18 @@
-<h1>All selections </h1>
-<% @posts.each do |post| %>
-<div class="media">
-  <div class="media-body">
-    <h4 class="media-heading">
-      <%= link_to post.selection, post%>
-    </h4>
-  </div>
-</div>    
+<h1>Company-wide Selections</h1>
+
+ <% if policy(Post.new).create? %>
+  <%= link_to "New Selection", new_post_path, class: 'btn btn-success' %>
  <% end %>
+
+<% @posts.each do |post| %>
+  <div class="media">
+    <div class="media-body">
+      <h4 class="media-heading">
+        <%= link_to post.selection, post %>
+      </h4>
+       <small>
+         submitted <%= time_ago_in_words(post.created_at) %> ago by <%= post.user.name%><br/>
+       </small>
+    </div>
+  </div>
+<% end %>

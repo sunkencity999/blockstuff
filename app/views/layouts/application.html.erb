@@ -12,8 +12,12 @@
 <ul>
 <ul class="nav nav-tabs">
   <li><%= link_to "Furniture Selection", root_path %></li> 
+  <% if policy(Post.new).create? %>
+  <% if current_user.role == 'admin' %>
   <li><%= link_to "Make Selection", new_post_path %></li>
+  <% end %>
   <li><%= link_to "View Selections", posts_path %></li>
+  <% end %>
 
    <div class="pull-right user-info">
            <% if current_user %>

@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is a technical challenge, with the goal being to create a website for storing and viewing staff members' choice of prospective new furniture. 
 
-Things you may want to cover:
+*I choose Ruby and the Rails framework for the straight forward 
+*authentication methods available using gems like Devise, and the accessibility of useful styling frameworks like Bootstrap. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The staff members' selections are only viewable by the logged-in admin, via the edit page viewable by clicking the admin's name. 
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.

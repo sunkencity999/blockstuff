@@ -15,8 +15,9 @@
   <% if policy(Post.new).create? %>
   <li><%= link_to "Make Selection", new_post_path %></li>
   <% end %>
-  <% if current_user.role === 'admin' %>
+  <% if @user && @user.role == 'admin' %>
   <li><%= link_to "View Selections", posts_path %></li>
+  
   <% end %>
 
    <div class="pull-right user-info">

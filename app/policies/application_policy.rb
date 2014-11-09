@@ -10,7 +10,7 @@ class ApplicationPolicy
     false
   end
 
-  def show?
+  def show? #checks to make sure a record exists to 'show'.
     scope.where(:id => record.id).exists?
   end
 
@@ -22,7 +22,7 @@ class ApplicationPolicy
     create?
   end
 
-  def update?
+  def update? #this checks for a user or admin before allowing a post to be edited. 
     user.present? && (record.user == user || user.admin?)
   end
 

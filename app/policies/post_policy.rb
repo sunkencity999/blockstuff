@@ -12,7 +12,7 @@ end
 def create?
   user.present?
 end
-
+ #keeping things DRY...
 def update?
   create?
 end

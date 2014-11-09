@@ -8,3 +8,4 @@ This app is a technical challenge, with the goal being to create a website for s
 The staff members' selections are only viewable by the logged-in admin, via the edit page viewable by clicking the admin's name. 
 
 
+A live version of the app is available here: https://blockstuff.herokuapp.com/
